@@ -40,17 +40,16 @@
           <br>
           <div class="card">
             <div class="card-header">
-              <label>Menu</label>
+              <label style="margin-left:30rem;">Menu</label>
             </div>
             <div class="card-body">
-              <div class="btn-group-vertical col-12">
-                <label style="margin-left:auto; margin-right:auto;">Catedras</label>
+                <label style="margin-left:30rem;">Catedras</label>
                 <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Catedra</button>
                 <button type="button" class="btn btn-primary btn-lg btn-block">Ver Catedras</button>
-                <label style="margin-left:auto; margin-right:auto;">Alumnos</label>
+                <hr>
+                <label style="margin-left:30rem;">Alumnos</label>
                 <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Alumno</button>
                 <button type="button" class="btn btn-primary btn-lg btn-block">Ver Alumnos</button>
-              </div>
             </div>
           </div>
         </div>
