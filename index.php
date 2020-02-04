@@ -60,7 +60,7 @@
               <div class="form-row">
                 <div class="col-6">
                   <label for="validationCustom01">Nombre Catedra</label>
-                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <input type="text" placeholder="Nombre Catedra" class="form-control" id="validationCustom01" required>
                 </div>
               </div>
               <hr>
@@ -76,17 +76,17 @@
                 </div>
                 <div class="form-group col-md-3">
                   <label for="inputEmail4">DNI</label>
-                  <input disabled placeholder="25.653.456" type="text" class="form-control">
+                  <input disabled placeholder="-" type="text" class="form-control">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-6">
                   <label for="inputEmail4">Legajo</label>
-                  <input disabled placeholder="43.334" type="text" class="form-control">
+                  <input disabled placeholder="-" type="text" class="form-control">
                 </div>
                 <div class="form-group col-6">
                   <label for="inputEmail4">Cuit</label>
-                  <input disabled placeholder="10-12.213.345-9" type="text" class="form-control">
+                  <input disabled placeholder="-" type="text" class="form-control">
                 </div>
               </div>
               <hr>
@@ -140,6 +140,9 @@
                     </tbody>
                   </table>
                 </div>
+              </div>
+              <div class="form-row">
+                <button type="submit" class="btn btn-primary">Aceptar</button>
               </div>
             </div>
           </div>
