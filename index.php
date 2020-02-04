@@ -38,18 +38,28 @@
       <div class="content">
         <div class="container-fluid col-lg-9">
           <br>
-          <div class="card">
+          <div class="card" style="display:none;">
             <div class="card-header">
               <label style="margin-left:30rem;">Menu</label>
             </div>
             <div class="card-body">
-                <label style="margin-left:30rem;">Catedras</label>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Catedra</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Ver Catedras</button>
-                <hr>
-                <label style="margin-left:30rem;">Alumnos</label>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Alumno</button>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Ver Alumnos</button>
+              <label style="margin-left:30rem;">Catedras</label>
+              <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Catedra</button>
+              <button type="button" class="btn btn-primary btn-lg btn-block">Ver Catedras</button>
+              <hr>
+              <label style="margin-left:30rem;">Alumnos</label>
+              <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Alumno</button>
+              <button type="button" class="btn btn-primary btn-lg btn-block">Ver Alumnos</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Registrar Catedra
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
