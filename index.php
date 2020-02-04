@@ -38,13 +38,13 @@
       <div class="content">
         <div class="container-fluid col-lg-9">
           <br>
-          <div class="card" style="display:none;">
+          <div class="card" id="menu" >
             <div class="card-header">
               <label style="margin-left:30rem;">Menu</label>
             </div>
             <div class="card-body">
               <label style="margin-left:30rem;">Catedras</label>
-              <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Catedra</button>
+              <button id="registra_catedra" type="button" class="btn btn-primary btn-lg btn-block">Registrar Catedra</button>
               <button type="button" class="btn btn-primary btn-lg btn-block">Ver Catedras</button>
               <hr>
               <label style="margin-left:30rem;">Alumnos</label>
@@ -52,7 +52,7 @@
               <button type="button" class="btn btn-primary btn-lg btn-block">Ver Alumnos</button>
             </div>
           </div>
-          <div class="card col-8">
+          <div id="catedra_registro" style="margin-left:auto;margin-right:auto; display:none;" class="card col-8">
             <div class="card-header">
               Registrar Catedra
             </div>
@@ -142,7 +142,8 @@
                 </div>
               </div>
               <div class="form-row">
-                <button type="submit" class="btn btn-primary">Aceptar</button>
+                <button style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
+                <button id="registro_cat_volver" type="submit" class="btn btn-secondary">Volver</button>
               </div>
             </div>
           </div>
@@ -179,6 +180,7 @@
   <!-- jQuery -->
   <script src="plugins/jquery/jquery.min.js"></script>
   <script src="plugins/jquery-tabledit-1.2.3/jquery.tabledit.min.js" charset="utf-8"></script>
+  <script src="funcs\funciones.js" charset="utf-8"></script>
   <!-- Bootstrap 4 -->
   <script src="plugins/datatables/jquery.dataTables.js"></script>
   <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
