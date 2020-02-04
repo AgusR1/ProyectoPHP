@@ -52,14 +52,95 @@
               <button type="button" class="btn btn-primary btn-lg btn-block">Ver Alumnos</button>
             </div>
           </div>
-          <div class="card">
+          <div class="card col-8">
             <div class="card-header">
               Registrar Catedra
             </div>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="form-row">
+                <div class="col-6">
+                  <label for="validationCustom01">Nombre Catedra</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <label for="validationCustom04">Nombre e ID Profesor</label>
+                  <select class="custom-select" id="validationCustom04" required>
+                    <option selected value="">Selecciona...</option>
+                    <option>1-Gonzalo Recoulat</option>
+                    <option>2-Agustin Rosales</option>
+                    <option>3-Lautaro Cresut</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="inputEmail4">DNI</label>
+                  <input disabled placeholder="25.653.456" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <label for="inputEmail4">Legajo</label>
+                  <input disabled placeholder="43.334" type="text" class="form-control">
+                </div>
+                <div class="form-group col-6">
+                  <label for="inputEmail4">Cuit</label>
+                  <input disabled placeholder="10-12.213.345-9" type="text" class="form-control">
+                </div>
+              </div>
+              <hr>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Alumnos inscriptos</label>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>#ID</th>
+                        <th>Nombre y Apellido</th>
+                        <th>DNI</th>
+                        <th>Legajo</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>#ID</th>
+                        <th>Nombre y Apellido</th>
+                        <th>DNI</th>
+                        <th>Legajo</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>-</td>
+                        <td> <select class="custom-select">
+                          <option selected >Añadir alumno</option>
+                          <option>1-Producto1</option>
+                          <option>2-Producto2</option>
+                          <option>3-Producto3</option>
+                        </select>
+                        </td>
+                        <td>-</td>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Agustin Rosales</td>
+                        <td>34.555.567</td>
+                        <td>13.456</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Lautaro Cresut</td>
+                        <td>34.345.423</td>
+                        <td>13.434</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
