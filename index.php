@@ -45,7 +45,7 @@
             <div class="card-body">
               <label style="margin-left:30rem;">Catedras</label>
               <button id="registra_catedra" type="button" class="btn btn-primary btn-lg btn-block">Registrar Catedra</button>
-              <button type="button" class="btn btn-primary btn-lg btn-block">Ver Catedras</button>
+              <button id="ver_cat" type="button" class="btn btn-primary btn-lg btn-block">Ver Catedras</button>
               <hr>
               <label style="margin-left:30rem;">Alumnos</label>
               <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Alumno</button>
@@ -121,72 +121,130 @@
                           <option>2-Producto2</option>
                           <option>3-Producto3</option>
                         </select>
-                        </td>
-                        <td>-</td>
-                        <td>-</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Agustin Rosales</td>
-                        <td>34.555.567</td>
-                        <td>13.456</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Lautaro Cresut</td>
-                        <td>34.345.423</td>
-                        <td>13.434</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                      </td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Agustin Rosales</td>
+                      <td>34.555.567</td>
+                      <td>13.456</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Lautaro Cresut</td>
+                      <td>34.345.423</td>
+                      <td>13.434</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="form-row">
-                <button style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
-                <button id="registro_cat_volver" type="submit" class="btn btn-secondary">Volver</button>
-              </div>
+            </div>
+            <div class="form-row">
+              <button style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
+              <button id="registro_cat_volver" type="submit" class="btn btn-secondary">Volver</button>
             </div>
           </div>
         </div>
-        <!-- /.container-fluid -->
+        <div id="ver_catedras" style="display:none;" class="card shadow">
+          <div class="card-header">
+            Catedras
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Titular</th>
+                    <th>Matricula</th>
+                    <th>Detalles</th>
+                    <th>Operaciones</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Titular</th>
+                    <th>Matricula</th>
+                    <th>Alumnos</th>
+                    <th>Operaciones</th>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <td>Paradigmas de la Programacion</td>
+                    <td>Horacio Omar Martin</td>
+                    <td>12</td>
+                    <td><button type="button" class="btn btn-link">Ver Alumnos</button></td>
+                    <td><button class="btn btn-primary" type="button">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-trash"></i>
+                    </button></td>
+                  </tr>
+                  <tr>
+                    <td>Matematica Superior</td>
+                    <td>Marcos Suarez</td>
+                    <td>10</td>
+                    <td><button type="button" class="btn btn-link">Ver Alumnos</button></td>
+                    <td><button class="btn btn-primary" type="button">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-trash"></i>
+                    </button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="form-row">
+              <button id="ver_cat_volver" type="submit" class="btn btn-secondary">Volver</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /.content -->
+      <!-- /.container-fluid -->
     </div>
-    <!-- /.content-wrapper -->
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-      <div class="p-3">
-        <h5>Title</h5>
-        <p>Sidebar content</p>
-      </div>
-    </aside>
-    <!-- /.control-sidebar -->
-
-    <!-- Main Footer -->
-    <footer class="main-footer">
-      <!-- To the right -->
-      <div class="float-right d-none d-sm-inline">
-        Anything you want
-      </div>
-      <!-- Default to the left -->
-      <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-    </footer>
+    <!-- /.content -->
   </div>
-  <!-- ./wrapper -->
-  <!-- REQUIRED SCRIPTS -->
+  <!-- /.content-wrapper -->
 
-  <!-- jQuery -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/jquery-tabledit-1.2.3/jquery.tabledit.min.js" charset="utf-8"></script>
-  <script src="funcs\funciones.js" charset="utf-8"></script>
-  <!-- Bootstrap 4 -->
-  <script src="plugins/datatables/jquery.dataTables.js"></script>
-  <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
-  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.min.js"></script>
-  <script src="scripts/funciones.js" charset="utf-8"></script>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery-tabledit-1.2.3/jquery.tabledit.min.js" charset="utf-8"></script>
+<script src="funcs\funciones.js" charset="utf-8"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/datatables/jquery.dataTables.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<script src="scripts/funciones.js" charset="utf-8"></script>
 </body>
 </html>
