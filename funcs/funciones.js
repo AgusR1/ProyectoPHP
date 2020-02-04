@@ -22,3 +22,11 @@ $( "#ver_alum_volver" ).click(function() {
   $("#menu").show("slow");
   $("#ver_alumnos").hide();
 });
+$( "#reg_al" ).click(function() {
+  $("#menu").hide();
+  $("#alumno_registro").show("slow");
+});
+$( "#registro_alu_volver" ).click(function() {
+  $("#menu").show("slow");
+  $("#alumno_registro").hide();
+});

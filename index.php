@@ -48,7 +48,7 @@
               <button id="ver_cat" type="button" class="btn btn-primary btn-lg btn-block">Ver Catedras</button>
               <hr>
               <label style="margin-left:30rem;">Alumnos</label>
-              <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Alumno</button>
+              <button id="reg_al" type="button" class="btn btn-primary btn-lg btn-block">Registrar Alumno</button>
               <button id="ver_al" type="button" class="btn btn-primary btn-lg btn-block">Ver Alumnos</button>
             </div>
           </div>
@@ -92,7 +92,7 @@
               <hr>
               <div class="form-row">
                 <div class="form-group">
-                  <label>Alumnos inscriptos</label>
+                  <label>Alumnos</label>
                 </div>
                 <div class="table-responsive">
                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -281,22 +281,43 @@
             </div>
           </div>
         </div>
+        <div id="alumno_registro" style="margin-left:auto;margin-right:auto; display:none;" class="card col-8">
+          <div class="card-header">
+            Registrar Alumno
+          </div>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="validationCustom04">Nombre</label>
+                <input placeholder="Nombre" type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputEmail4">Apellido</label>
+                <input placeholder="Apellido" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="inputEmail4">Legajo</label>
+                <input placeholder="Legajo" type="text" class="form-control">
+              </div>
+              <div class="form-group col-6">
+                <label for="inputEmail4">DNI</label>
+                <input placeholder="DNI" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-row">
+              <button style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
+              <button id="registro_alu_volver" type="submit" class="btn btn-secondary">Volver</button>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.container-fluid -->
     </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
-  </aside>
-  <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
   <footer class="main-footer">
