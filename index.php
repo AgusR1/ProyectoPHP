@@ -49,7 +49,7 @@
               <hr>
               <label style="margin-left:30rem;">Alumnos</label>
               <button type="button" class="btn btn-primary btn-lg btn-block">Registrar Alumno</button>
-              <button type="button" class="btn btn-primary btn-lg btn-block">Ver Alumnos</button>
+              <button id="ver_al" type="button" class="btn btn-primary btn-lg btn-block">Ver Alumnos</button>
             </div>
           </div>
           <div id="catedra_registro" style="margin-left:auto;margin-right:auto; display:none;" class="card col-8">
@@ -117,9 +117,9 @@
                         <td>-</td>
                         <td> <select class="custom-select">
                           <option selected >Añadir alumno</option>
-                          <option>1-Producto1</option>
-                          <option>2-Producto2</option>
-                          <option>3-Producto3</option>
+                          <option>1-Alumno1</option>
+                          <option>2-Alumno2</option>
+                          <option>3-Alumno3</option>
                         </select>
                       </td>
                       <td>-</td>
@@ -202,6 +202,82 @@
             </div>
             <div class="form-row">
               <button id="ver_cat_volver" type="submit" class="btn btn-secondary">Volver</button>
+            </div>
+          </div>
+        </div>
+        <div id="ver_alumnos" style="display:none;" class="card shadow">
+          <div class="card-header">
+            Alumnos
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th>Nombre y Apellido</th>
+                    <th>DNI</th>
+                    <th>Legajo</th>
+                    <th>Operaciones</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                  <tr>
+                    <th>Nombre y Apellido</th>
+                    <th>DNI</th>
+                    <th>Legajo</th>
+                    <th>Operaciones</th>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <td>Agustin Rosales</td>
+                    <td>39.543.324</td>
+                    <td>43.324</td>
+                    <td><button class="btn btn-primary" type="button">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-trash"></i>
+                    </button></td>
+                  </tr>
+                  <tr>
+                    <td>Gonzalo Recoulat</td>
+                    <td>39.456.123</td>
+                    <td>32.345</td>
+                    <td><button class="btn btn-primary" type="button">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-trash"></i>
+                    </button></td>
+                  </tr>
+                  <tr>
+                    <td>Rodrigo Fernandez</td>
+                    <td>39.433.445</td>
+                    <td>31.432</td>
+                    <td><button class="btn btn-primary" type="button">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-trash"></i>
+                    </button></td>
+                  </tr>
+                  <tr>
+                    <td>Lautaro Cresut</td>
+                    <td>39.123.123</td>
+                    <td>23.345</td>
+                    <td><button class="btn btn-primary" type="button">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-trash"></i>
+                    </button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="form-row">
+              <button id="ver_alum_volver" type="submit" class="btn btn-secondary">Volver</button>
             </div>
           </div>
         </div>

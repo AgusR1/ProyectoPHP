@@ -14,3 +14,11 @@ $( "#ver_cat_volver" ).click(function() {
   $("#menu").show("slow");
   $("#ver_catedras").hide();
 });
+$( "#ver_al" ).click(function() {
+  $("#menu").hide();
+  $("#ver_alumnos").show("slow");
+});
+$( "#ver_alum_volver" ).click(function() {
+  $("#menu").show("slow");
+  $("#ver_alumnos").hide();
+});
