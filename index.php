@@ -57,97 +57,97 @@
               Registrar Catedra
             </div>
             <form id="formulario_catedra" action="index.php" method="post">
-            <div class="card-body">
-              <div class="form-row">
-                <div class="col-6">
-                  <label>Nombre Catedra</label>
-                  <input name="nombre_catedra" type="text" placeholder="Nombre Catedra" class="form-control" id="validationCustom01" required>
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="col-6">
+                    <label>Nombre Catedra</label>
+                    <input name="nombre_catedra" type="text" placeholder="Nombre Catedra" class="form-control" id="validationCustom01" required>
+                  </div>
                 </div>
-              </div>
-              <hr>
-              <div class="form-row">
-                <div class="form-group col-6">
-                  <label for="validationCustom04">Nombre e ID Profesor</label>
-                  <select name="select_profesor" class="custom-select" id="validationCustom04" required>
-                    <option selected value="">Selecciona...</option>
-                    <option>1-Gonzalo Recoulat</option>
-                    <option>2-Agustin Rosales</option>
-                    <option>3-Lautaro Cresut</option>
-                  </select>
+                <hr>
+                <div class="form-row">
+                  <div class="form-group col-6">
+                    <label for="validationCustom04">Nombre e ID Profesor</label>
+                    <select name="select_profesor" class="custom-select" id="validationCustom04" required>
+                      <option selected value="">Selecciona...</option>
+                      <option>1-Gonzalo Recoulat</option>
+                      <option>2-Agustin Rosales</option>
+                      <option>3-Lautaro Cresut</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>DNI</label>
+                    <input disabled placeholder="-" type="text" class="form-control">
+                  </div>
                 </div>
-                <div class="form-group col-md-3">
-                  <label>DNI</label>
-                  <input disabled placeholder="-" type="text" class="form-control">
+                <div class="form-row">
+                  <div class="form-group col-6">
+                    <label>Legajo</label>
+                    <input disabled placeholder="-" type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-6">
+                    <label>Cuit</label>
+                    <input disabled placeholder="-" type="text" class="form-control">
+                  </div>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-6">
-                  <label>Legajo</label>
-                  <input disabled placeholder="-" type="text" class="form-control">
-                </div>
-                <div class="form-group col-6">
-                  <label>Cuit</label>
-                  <input disabled placeholder="-" type="text" class="form-control">
-                </div>
-              </div>
-              <hr>
-              <div class="form-row">
-                <div class="form-group">
-                  <label>Alumnos</label>
-                </div>
-                <div class="table-responsive">
-                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                      <tr>
-                        <th>#ID</th>
-                        <th>Nombre y Apellido</th>
-                        <th>DNI</th>
-                        <th>Legajo</th>
-                      </tr>
-                    </thead>
-                    <tfoot>
-                      <tr>
-                        <th>#ID</th>
-                        <th>Nombre y Apellido</th>
-                        <th>DNI</th>
-                        <th>Legajo</th>
-                      </tr>
-                    </tfoot>
-                    <tbody>
-                      <tr>
+                <hr>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Alumnos</label>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                      <thead>
+                        <tr>
+                          <th>#ID</th>
+                          <th>Nombre y Apellido</th>
+                          <th>DNI</th>
+                          <th>Legajo</th>
+                        </tr>
+                      </thead>
+                      <tfoot>
+                        <tr>
+                          <th>#ID</th>
+                          <th>Nombre y Apellido</th>
+                          <th>DNI</th>
+                          <th>Legajo</th>
+                        </tr>
+                      </tfoot>
+                      <tbody>
+                        <tr>
+                          <td>-</td>
+                          <td> <select class="custom-select">
+                            <option selected >Añadir alumno</option>
+                            <option>1-Alumno1</option>
+                            <option>2-Alumno2</option>
+                            <option>3-Alumno3</option>
+                          </select>
+                        </td>
                         <td>-</td>
-                        <td> <select class="custom-select">
-                          <option selected >Añadir alumno</option>
-                          <option>1-Alumno1</option>
-                          <option>2-Alumno2</option>
-                          <option>3-Alumno3</option>
-                        </select>
-                      </td>
-                      <td>-</td>
-                      <td>-</td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Agustin Rosales</td>
-                      <td>34.555.567</td>
-                      <td>13.456</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Lautaro Cresut</td>
-                      <td>34.345.423</td>
-                      <td>13.434</td>
-                    </tr>
-                  </tbody>
-                </table>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Agustin Rosales</td>
+                        <td>34.555.567</td>
+                        <td>13.456</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Lautaro Cresut</td>
+                        <td>34.345.423</td>
+                        <td>13.434</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="form-row">
+                <button style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
+                <button id="registro_cat_volver" class="btn btn-secondary">Volver</button>
               </div>
             </div>
-            <div class="form-row">
-              <button style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
-              <button id="registro_cat_volver" type="submit" class="btn btn-secondary">Volver</button>
-            </div>
-          </div>
-        </form>
+          </form>
         </div>
         <div id="ver_catedras" style="display:none;" class="card shadow">
           <div class="card-header">
@@ -231,50 +231,29 @@
                   </tr>
                 </tfoot>
                 <tbody>
-                  <tr>
-                    <td>Agustin Rosales</td>
-                    <td>39.543.324</td>
-                    <td>43.324</td>
-                    <td><button class="btn btn-primary" type="button">
-                      <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="btn btn-primary" type="button">
-                      <i class="fas fa-trash"></i>
-                    </button></td>
-                  </tr>
-                  <tr>
-                    <td>Gonzalo Recoulat</td>
-                    <td>39.456.123</td>
-                    <td>32.345</td>
-                    <td><button class="btn btn-primary" type="button">
-                      <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="btn btn-primary" type="button">
-                      <i class="fas fa-trash"></i>
-                    </button></td>
-                  </tr>
-                  <tr>
-                    <td>Rodrigo Fernandez</td>
-                    <td>39.433.445</td>
-                    <td>31.432</td>
-                    <td><button class="btn btn-primary" type="button">
-                      <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="btn btn-primary" type="button">
-                      <i class="fas fa-trash"></i>
-                    </button></td>
-                  </tr>
-                  <tr>
-                    <td>Lautaro Cresut</td>
-                    <td>39.123.123</td>
-                    <td>23.345</td>
-                    <td><button class="btn btn-primary" type="button">
-                      <i class="fas fa-edit"></i>
-                    </button>
-                    <button class="btn btn-primary" type="button">
-                      <i class="fas fa-trash"></i>
-                    </button></td>
-                  </tr>
+                  <?php
+                  $archivo = @fopen("txt\alumnos.txt","r");
+                    while (($bufer = fgets($archivo, 4096)) !== false)
+                    {
+                      $alumno=explode(" " ,$bufer);
+                      echo"<tr>";
+                      echo "<td>".$alumno["0"]." ".$alumno["1"];"</td>";
+                      echo "<td>".$alumno["2"]."</td>";
+                      echo "<td>".$alumno["3"]."</td>";
+                      echo'<td><button class="btn btn-primary" type="button">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-trash"></i>
+                      </button></td>
+                    </tr>';
+                    }
+                    if (!feof($archivo))
+                    {
+                      echo "Error: fallo inesperado de fgets()\n";
+                    }
+                    fclose($archivo);
+                  ?>
                 </tbody>
               </table>
             </div>
@@ -288,33 +267,33 @@
             Registrar Alumno
           </div>
           <form action="index.php" method="post">
-          <div class="card-body">
-            <div class="form-row">
-              <div class="form-group col-6">
-                <label>Nombre</label>
-                <input name="nombre_alumno" placeholder="Nombre" type="text" class="form-control">
+            <div class="card-body">
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <label>Nombre</label>
+                  <input name="nombre_alumno" placeholder="Nombre" type="text" class="form-control">
+                </div>
+                <div class="form-group col-6">
+                  <label>Apellido</label>
+                  <input name="apellido_alumno" placeholder="Apellido" type="text" class="form-control">
+                </div>
               </div>
-              <div class="form-group col-6">
-                <label>Apellido</label>
-                <input name="apellido_alumno" placeholder="Apellido" type="text" class="form-control">
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <label>Legajo</label>
+                  <input name="legajo_alumno" placeholder="Legajo" type="text" class="form-control">
+                </div>
+                <div class="form-group col-6">
+                  <label>DNI</label>
+                  <input name="dni_alumno" placeholder="DNI" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-row">
+                <button name="acepta_alumno" style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
+                <button id="registro_alu_volver" type="submit" class="btn btn-secondary">Volver</button>
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-group col-6">
-                <label>Legajo</label>
-                <input name="legajo_alumno" placeholder="Legajo" type="text" class="form-control">
-              </div>
-              <div class="form-group col-6">
-                <label>DNI</label>
-                <input name="dni_alumno" placeholder="DNI" type="text" class="form-control">
-              </div>
-            </div>
-            <div class="form-row">
-              <button name="acepta_alumno" style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
-              <button id="registro_alu_volver" type="submit" class="btn btn-secondary">Volver</button>
-            </div>
-          </div>
-        </form>
+          </form>
         </div>
       </div>
       <!-- /.container-fluid -->
@@ -362,10 +341,10 @@ if (isset($_POST['nombre_alumno']) && isset($_POST['apellido_alumno']) && isset(
   fwrite($registro,$data.PHP_EOL);
   fclose($registro);
   echo'<script type="text/javascript">
-    alert("Alumno registrado exitosamente");
+  alert("Alumno registrado exitosamente");
   </script>';
   echo'<script type="text/javascript">
-    setTimeout(function(){location.href="index.php"},1000);
+  setTimeout(function(){location.href="index.php"},1000);
   </script>';
 }
 ?>
