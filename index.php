@@ -56,18 +56,19 @@
             <div class="card-header">
               Registrar Catedra
             </div>
+            <form id="formulario_catedra" action="index.php" method="post">
             <div class="card-body">
               <div class="form-row">
                 <div class="col-6">
-                  <label for="validationCustom01">Nombre Catedra</label>
-                  <input type="text" placeholder="Nombre Catedra" class="form-control" id="validationCustom01" required>
+                  <label>Nombre Catedra</label>
+                  <input name="nombre_catedra" type="text" placeholder="Nombre Catedra" class="form-control" id="validationCustom01" required>
                 </div>
               </div>
               <hr>
               <div class="form-row">
                 <div class="form-group col-6">
                   <label for="validationCustom04">Nombre e ID Profesor</label>
-                  <select class="custom-select" id="validationCustom04" required>
+                  <select name="select_profesor" class="custom-select" id="validationCustom04" required>
                     <option selected value="">Selecciona...</option>
                     <option>1-Gonzalo Recoulat</option>
                     <option>2-Agustin Rosales</option>
@@ -75,17 +76,17 @@
                   </select>
                 </div>
                 <div class="form-group col-md-3">
-                  <label for="inputEmail4">DNI</label>
+                  <label>DNI</label>
                   <input disabled placeholder="-" type="text" class="form-control">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-6">
-                  <label for="inputEmail4">Legajo</label>
+                  <label>Legajo</label>
                   <input disabled placeholder="-" type="text" class="form-control">
                 </div>
                 <div class="form-group col-6">
-                  <label for="inputEmail4">Cuit</label>
+                  <label>Cuit</label>
                   <input disabled placeholder="-" type="text" class="form-control">
                 </div>
               </div>
@@ -146,6 +147,7 @@
               <button id="registro_cat_volver" type="submit" class="btn btn-secondary">Volver</button>
             </div>
           </div>
+        </form>
         </div>
         <div id="ver_catedras" style="display:none;" class="card shadow">
           <div class="card-header">
@@ -285,25 +287,26 @@
           <div class="card-header">
             Registrar Alumno
           </div>
+          <form action="index.php" method="post">
           <div class="card-body">
             <div class="form-row">
               <div class="form-group col-6">
-                <label for="validationCustom04">Nombre</label>
-                <input placeholder="Nombre" type="text" class="form-control">
+                <label>Nombre</label>
+                <input name="nombre_alumno" placeholder="Nombre" type="text" class="form-control">
               </div>
               <div class="form-group col-md-3">
-                <label for="inputEmail4">Apellido</label>
-                <input placeholder="Apellido" type="text" class="form-control">
+                <label>Apellido</label>
+                <input name="apellido_alumno" placeholder="Apellido" type="text" class="form-control">
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-6">
-                <label for="inputEmail4">Legajo</label>
-                <input placeholder="Legajo" type="text" class="form-control">
+                <label>Legajo</label>
+                <input name="legajo_alumno" placeholder="Legajo" type="text" class="form-control">
               </div>
               <div class="form-group col-6">
-                <label for="inputEmail4">DNI</label>
-                <input placeholder="DNI" type="text" class="form-control">
+                <label>DNI</label>
+                <input name="dni_alumno" placeholder="DNI" type="text" class="form-control">
               </div>
             </div>
             <div class="form-row">
@@ -311,6 +314,7 @@
               <button id="registro_alu_volver" type="submit" class="btn btn-secondary">Volver</button>
             </div>
           </div>
+        </form>
         </div>
       </div>
       <!-- /.container-fluid -->
