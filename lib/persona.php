@@ -18,7 +18,14 @@ if( !class_exists('Persona') )
 		{
 			$this->nombre=$nombre;
 		}
-
+		public function setApellido($apellido)
+		{
+			$this->_apellido = $apellido;
+		}
+		public function getApellido()
+		{
+			return $this->apellido;
+		}
 		public function getNombre()
 		{
 			return $this->nombre;

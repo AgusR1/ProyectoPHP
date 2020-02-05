@@ -4,18 +4,20 @@ if( !class_exists('Alumno') )
 	class Alumno extends Persona
 	{
 		private $_legajo;
-		public function __construct($nombre, $apellido ,$dni)           //constructor
+		public function __construct($nombre, $apellido, $legajo ,$dni)           //constructor
 		{
-			parent::__construct($nombre,$apellido ,$dni);
+			$this->nombre = $nombre;
+			$this->apellido=$apellido;
+			$this->legajo=$legajo;
+			$this->dni = $dni;
 		}
-
 		public function setLegajo($legajo)
 		{
 			$this->_legajo = $legajo;
 		}
 			public function getLegajo()
 		{
-			return $this->_legajo;
+			return $this->legajo;
 		}
 	}
 }

@@ -294,7 +294,7 @@
                 <label>Nombre</label>
                 <input name="nombre_alumno" placeholder="Nombre" type="text" class="form-control">
               </div>
-              <div class="form-group col-md-3">
+              <div class="form-group col-6">
                 <label>Apellido</label>
                 <input name="apellido_alumno" placeholder="Apellido" type="text" class="form-control">
               </div>
@@ -310,7 +310,7 @@
               </div>
             </div>
             <div class="form-row">
-              <button style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
+              <button name="acepta_alumno" style="margin-right:1rem;" type="submit" class="btn btn-primary">Aceptar</button>
               <button id="registro_alu_volver" type="submit" class="btn btn-secondary">Volver</button>
             </div>
           </div>
@@ -335,7 +335,6 @@
 </div>
 <!-- ./wrapper -->
 <!-- REQUIRED SCRIPTS -->
-
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <script src="plugins/jquery-tabledit-1.2.3/jquery.tabledit.min.js" charset="utf-8"></script>
@@ -349,3 +348,24 @@
 <script src="scripts/funciones.js" charset="utf-8"></script>
 </body>
 </html>
+<?php
+require('lib/init.php');
+if (isset($_POST['nombre_alumno']) && isset($_POST['apellido_alumno']) && isset($_POST['legajo_alumno']) && isset($_POST['dni_alumno']))
+{
+  $nombre_alumno=$_POST['nombre_alumno'];
+  $apellido_alumno=$_POST['apellido_alumno'];
+  $legajo_alumno=$_POST['legajo_alumno'];
+  $dni_alumno=$_POST['dni_alumno'];
+  $alumno=new Alumno($nombre_alumno,$apellido_alumno,$legajo_alumno,$dni_alumno);
+  $data=$alumno->getNombre()." ".$alumno->getApellido()." ".$alumno->getLegajo()." ".$alumno->getDni();
+  $registro=fopen("txt\alumnos.txt","a");
+  fwrite($registro,$data.PHP_EOL);
+  fclose($registro);
+  echo'<script type="text/javascript">
+    alert("Alumno registrado exitosamente");
+  </script>';
+  echo'<script type="text/javascript">
+    setTimeout(function(){location.href="index.php"},1000);
+  </script>';
+}
+?>
