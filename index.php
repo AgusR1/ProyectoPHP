@@ -67,31 +67,27 @@
                 <hr>
                 <div class="form-row">
                   <div class="form-group col-6">
-                    <label for="validationCustom04">Nombre e ID Profesor</label>
+                    <label for="validationCustom04">Nombre y Apellido del Profesor</label>
                     <select name="select_profesor" class="custom-select" id="validationCustom04" required>
                       <option selected value="">Selecciona...</option>
-                      <option>1-Gonzalo Recoulat</option>
-                      <option>2-Agustin Rosales</option>
-                      <option>3-Lautaro Cresut</option>
+                      <?php
+                      $archivo = @fopen("txt\profesores.txt","r");
+                        while (($bufer = fgets($archivo, 4096)) !== false)
+                        {
+                          $profesor=explode(" " ,$bufer);
+                          echo "<option value=".$profesor["0"]." ".$profesor["1"].">".$profesor["0"]." ".$profesor["1"]."</option>";
+                        }
+                        if (!feof($archivo))
+                        {
+                          echo "Error: fallo inesperado de fgets()\n";
+                        }
+                        fclose($archivo);
+                      ?>
                     </select>
                   </div>
-                  <div class="form-group col-md-3">
-                    <label>DNI</label>
-                    <input disabled placeholder="-" type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-6">
-                    <label>Legajo</label>
-                    <input disabled placeholder="-" type="text" class="form-control">
-                  </div>
-                  <div class="form-group col-6">
-                    <label>Cuit</label>
-                    <input disabled placeholder="-" type="text" class="form-control">
-                  </div>
-                </div>
+
                 <hr>
-                <div class="form-row">
+                <div class="form-row col-12">
                   <div class="form-group">
                     <label>Alumnos</label>
                   </div>
@@ -99,23 +95,16 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                       <thead>
                         <tr>
-                          <th>#ID</th>
                           <th>Nombre y Apellido</th>
-                          <th>DNI</th>
-                          <th>Legajo</th>
                         </tr>
                       </thead>
                       <tfoot>
                         <tr>
-                          <th>#ID</th>
                           <th>Nombre y Apellido</th>
-                          <th>DNI</th>
-                          <th>Legajo</th>
                         </tr>
                       </tfoot>
                       <tbody>
                         <tr>
-                          <td>-</td>
                           <td> <select class="custom-select">
                             <option selected >Añadir alumno</option>
                             <?php
@@ -133,8 +122,6 @@
                             ?>
                           </select>
                         </td>
-                        <td>-</td>
-                        <td>-</td>
                       </tr>
                     </tbody>
                   </table>
@@ -146,6 +133,7 @@
               </div>
             </div>
           </form>
+        </div>
         </div>
         <div id="ver_catedras" style="display:none;" class="card shadow">
           <div class="card-header">
