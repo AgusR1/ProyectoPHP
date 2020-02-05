@@ -118,25 +118,23 @@
                           <td>-</td>
                           <td> <select class="custom-select">
                             <option selected >Añadir alumno</option>
-                            <option>1-Alumno1</option>
-                            <option>2-Alumno2</option>
-                            <option>3-Alumno3</option>
+                            <?php
+                            $archivo = @fopen("txt\alumnos.txt","r");
+                              while (($bufer = fgets($archivo, 4096)) !== false)
+                              {
+                                $alumno=explode(" " ,$bufer);
+                                echo "<option value=".$alumno["0"]." ".$alumno["1"].">".$alumno["0"]." ".$alumno["1"]."</option>";
+                              }
+                              if (!feof($archivo))
+                              {
+                                echo "Error: fallo inesperado de fgets()\n";
+                              }
+                              fclose($archivo);
+                            ?>
                           </select>
                         </td>
                         <td>-</td>
                         <td>-</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>Agustin Rosales</td>
-                        <td>34.555.567</td>
-                        <td>13.456</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Lautaro Cresut</td>
-                        <td>34.345.423</td>
-                        <td>13.434</td>
                       </tr>
                     </tbody>
                   </table>
