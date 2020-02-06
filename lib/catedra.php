@@ -3,62 +3,25 @@ if( !class_exists('catedra') )
 {
 	Class catedra
 	{
-		private $_materia;
-		private $_archivo='archivo.txt';
-		private $_alumnos=array();
+		private $_nombre;
 		private $_profesor;
 
-		public function __construct($materia,$archivo,$alumnos,$profesor)
+		public function __construct($nombre,$profesor)
 		{
-			$this->_materia=$materia;
-			$this->_archivo=$archivo;
-			$this->_alumnos=$alumnos;
+			$this->_nombre=$nombre;
 			$this->_profesor=$profesor;
 		}
-
-		public function addAlumno(Persona $alumno)
-		{
-			array_push($this->alumnos,$alumno);
-		}
-
 		public function addProfesor(Persona $profesor)
 		{
 			$this->_profesor=$profesor;
 		}
-
-		public function guardarCatedra()
+		public function getProfesor()
 		{
-			$manejador=fopen($_archivo,"w");
-			fwrite($manejador,"serialize" .PHP_EQL);
-			fclose($manejador);
+			return $this->_profesor;
 		}
-
-		public function recuperarCatedra()
-		{
-			$manejador=fopen(self::$_archivo,"r");
-			$catedra=(object)unserialize(fgets($manejador));
-			$this->_materia=$catedra->_materia;
-			$this->_profesor=$catedra->_profesor;
-			$this->_alumnos=$catedra->_alumnos;
-			fclose($manejador);
+		public function getNombre(){
+			return $this->_nombre;
 		}
-
-		public function getArchivo(){
-			return $this->_archivo;
-		}
-
-		public function getProfesor(){
-			return $this->profesor;
-		}
-
-		public function getMateria(){
-			return $this->materia;
-		}
-
-		public function getAlumnos(){
-			return $this->alumnos;
-		}
-
 	}
 }
 ?>
